@@ -18,9 +18,9 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Sextant\Sextant.csproj" />
+    <EmbeddedResource Remove="MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="MainPage.xaml" />
+    <ProjectReference Include="..\..\Sextant\Sextant.csproj" />
   </ItemGroup>
 </Project>

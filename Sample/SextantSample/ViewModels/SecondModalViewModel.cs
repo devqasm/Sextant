@@ -6,9 +6,9 @@ using System.Diagnostics;
 
 namespace SextantSample.ViewModels
 {
-	public class FirstModalViewModel : ViewModelBase
+	public class SecondModalViewModel : ViewModelBase
 	{
-		public ReactiveCommand<Unit, bool> OpenModal
+		public ReactiveCommand<Unit, bool> PushPage
         {
             get;
             set;
@@ -20,19 +20,19 @@ namespace SextantSample.ViewModels
             set;
         }
               
-		public FirstModalViewModel()
+		public SecondModalViewModel()
 		{
-			OpenModal = ReactiveCommand
+			PushPage = ReactiveCommand
                 .CreateFromTask(() =>
-                    this.PushModalPageAsync<SecondModalNavigationViewModel, SecondModalViewModel>(),
+	                this.PushAsync<RedViewModel>(),
                     outputScheduler: RxApp.MainThreadScheduler);
 
 			PopModal = ReactiveCommand
                 .CreateFromTask(() =>
-	                this.PopModalPageAsync(),
+	                this.PopModalAsync(),
                     outputScheduler: RxApp.MainThreadScheduler);
 
-            OpenModal.Subscribe(x => Debug.WriteLine("PagePushed"));
+            PushPage.Subscribe(x => Debug.WriteLine("PagePushed"));
 			PopModal.Subscribe(x => Debug.WriteLine("PagePoped"));
 
 		}

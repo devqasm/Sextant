@@ -58,6 +58,27 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
+    <Reference Include="SextantSample">
+      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
@@ -107,7 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SextantSample\SextantSample.csproj">
-      <Project>{4FC79E4E-CD14-4A37-A150-CB6F0E2B99D0}</Project>
+      <Project>{44FA03FD-7A52-41AD-9332-1B34FFDEE67B}</Project>
       <Name>SextantSample</Name>
     </ProjectReference>
   </ItemGroup>

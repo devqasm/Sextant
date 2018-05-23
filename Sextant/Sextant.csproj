@@ -17,5 +17,9 @@
   <ItemGroup>
     <Compile Remove="IBaseFactory.cs" />
     <Compile Remove="INavigationFactory.cs" />
+    <Compile Remove="XamarinFormsSextantNavigationService.cs" />
+    <Compile Remove="SextantNavigationServiceBase.cs" />
+    <Compile Remove="INavigationInterceptors.cs" />
+    <Compile Remove="ISextantNavigationService.cs" />
   </ItemGroup>
 </Project>

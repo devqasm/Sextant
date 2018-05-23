@@ -19,7 +19,7 @@ namespace SextantSample.ViewModels
 		{
 			PopModal = ReactiveCommand
                 .CreateFromTask(() =>
-                    this.PopModalPageAsync(),
+                    this.PopModalAsync(),
                     outputScheduler: RxApp.MainThreadScheduler);
 
 			PopModal.Subscribe(x => Debug.WriteLine("PagePushed"));

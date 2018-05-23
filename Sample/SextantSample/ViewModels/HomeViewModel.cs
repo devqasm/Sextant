@@ -19,7 +19,7 @@ namespace SextantSample.ViewModels
 		{
 			OpenModal = ReactiveCommand
 				.CreateFromTask(() =>
-								this.PushModalPageAsync<FirstModalNavigationViewModel, FirstModalViewModel>(),
+								this.PushModalAsync<FirstModalNavigationViewModel, FirstModalViewModel>(),
 						        outputScheduler: RxApp.MainThreadScheduler);
 
 			OpenModal.Subscribe(x => Debug.WriteLine("PagePushed"));
