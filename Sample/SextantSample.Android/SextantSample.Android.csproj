@@ -16,7 +16,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -58,30 +58,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
@@ -131,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SextantSample\SextantSample.csproj">
-      <Project>{44FA03FD-7A52-41AD-9332-1B34FFDEE67B}</Project>
+      <Project>{44fa03fd-7a52-41ad-9332-1b34ffdee67b}</Project>
       <Name>SextantSample</Name>
     </ProjectReference>
   </ItemGroup>

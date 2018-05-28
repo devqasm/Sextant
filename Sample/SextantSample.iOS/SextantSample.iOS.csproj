@@ -91,13 +91,17 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sample Release|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\Sample Release</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
-    <MtouchVerbosity></MtouchVerbosity>
-    <MtouchLink></MtouchLink>
-    <MtouchHttpClientHandler></MtouchHttpClientHandler>
+    <MtouchVerbosity>
+    </MtouchVerbosity>
+    <MtouchLink>
+    </MtouchLink>
+    <MtouchHttpClientHandler>
+    </MtouchHttpClientHandler>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -156,30 +160,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
-    <Reference Include="SextantSample">
-      <HintPath>..\SextantSample\bin\Debug\netstandard2.0\SextantSample.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
@@ -187,11 +167,11 @@
       <Version>8.0.0</Version>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\SextantSample\SextantSample.csproj">
-      <Project>{44FA03FD-7A52-41AD-9332-1B34FFDEE67B}</Project>
+      <Project>{44fa03fd-7a52-41ad-9332-1b34ffdee67b}</Project>
       <Name>SextantSample</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
