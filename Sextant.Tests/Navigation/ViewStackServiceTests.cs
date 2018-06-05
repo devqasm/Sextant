@@ -30,11 +30,12 @@ namespace Sextant.Tests.Navigation
             public async Task Should_Pop_Modal()
             {
                 // Given
-                var fixture = new ViewStackServiceFixture().WithModalStack();
+                var fixture = new ViewStackServiceFixture().WithTwoPageStack();
 
                 // When
                 await fixture.ViewStackService.PopModal();
-                var result = fixture.ViewStackService.ModalStack.FirstAsync().Wait();
+                await fixture.ViewStackService.PopModal();
+                var result = await fixture.ViewStackService.ModalStack.FirstAsync();
 
                 // Then
                 result.Should().BeEmpty();
@@ -91,7 +92,7 @@ namespace Sextant.Tests.Navigation
 
                 // When
                 await fixture.ViewStackService.PopPage();
-                var result = fixture.ViewStackService.PageStack.FirstAsync().Wait();
+                var result = await fixture.ViewStackService.PageStack.FirstAsync();
 
                 // Then
                 result.Should().BeEmpty();
@@ -162,7 +163,7 @@ namespace Sextant.Tests.Navigation
 
                 // When
                 await fixture.ViewStackService.PushModal(fixture.ModalViewModel, "modal");
-                var result = fixture.ViewStackService.ModalStack.FirstAsync().Wait();
+                var result = await fixture.ViewStackService.ModalStack.FirstAsync();
 
                 // Then
                 result.Should().NotBeNullOrEmpty();
@@ -221,7 +222,7 @@ namespace Sextant.Tests.Navigation
 
                 // When
                 await fixture.ViewStackService.PushPage(fixture.PageViewModel);
-                var result = fixture.ViewStackService.PageStack.FirstAsync().Wait();
+                var result = await fixture.ViewStackService.PageStack.FirstAsync();
 
                 // Then
                 result.Should().NotBeNullOrEmpty();

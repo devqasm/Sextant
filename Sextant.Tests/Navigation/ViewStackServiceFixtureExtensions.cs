@@ -15,5 +15,12 @@ namespace Sextant.Tests.Navigation
             viewStackServiceFixture.ViewStackService.PushPage(viewStackServiceFixture.PageViewModel, viewStackServiceFixture.PageViewModel.Id).Subscribe();
             return viewStackServiceFixture;
         }
+
+        public static ViewStackServiceFixture WithTwoPageStack(this ViewStackServiceFixture viewStackServiceFixture)
+        {
+            viewStackServiceFixture.ViewStackService.PushPage(viewStackServiceFixture.PageViewModel, viewStackServiceFixture.PageViewModel.Id).Subscribe();
+            viewStackServiceFixture.ViewStackService.PushPage(viewStackServiceFixture.PageViewModel, viewStackServiceFixture.PageViewModel.Id).Subscribe();
+            return viewStackServiceFixture;
+        }
     }
 }
